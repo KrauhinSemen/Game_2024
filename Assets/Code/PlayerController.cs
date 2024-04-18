@@ -17,6 +17,12 @@ namespace Cainos.PixelArtTopDown_Basic
         {
             spriteRenderer1 = GetComponent<SpriteRenderer>();
             animator1 = GetComponent<Animator>();
+            if (PlayerPrefs.HasKey("last_x") && PlayerPrefs.HasKey("last_y"))
+            {
+                gameObject.transform.localPosition = new Vector3(PlayerPrefs.GetFloat("last_x"), PlayerPrefs.GetFloat("last_y"));
+                PlayerPrefs.DeleteKey("last_x");
+                PlayerPrefs.DeleteKey("last_y");
+            }
         }
 
 
