@@ -6,42 +6,43 @@ public class SpriteController : MonoBehaviour
 {
     private BackgroundController switcher;
     private Animator animator;
-    private RectTransform rect;
+    private bool isHiddenChar1 = true;
+    private bool isHiddenChar2 = false;
 
     private void Awake()
     {
         switcher = GetComponent<BackgroundController>();
         animator = GetComponent<Animator>();
-        rect = GetComponent<RectTransform>();
     }
+
     public void Setup(Sprite sprite)
     {
         switcher.SetImage(sprite);
     }
 
-    public void Show(Vector2 coords)
+    public void ShowAll()
     {
         animator.SetTrigger("Show");
-        rect.localPosition = coords;
+        isHiddenChar1 = false;
+        isHiddenChar2 = false;
     }
 
-    public void Hide()
+    public void HideAll()
     {
-        animator.SetTrigger("Hide");
-    }
-
-    public void Move(Vector2 coords, float speed)
-    {
-        StartCoroutine(MoveCoroutine(coords, speed));
-    }
-
-    private IEnumerator MoveCoroutine(Vector2 coords, float speed)
-    {
-        while (rect.localPosition.x != coords.x || rect.localPosition.y != coords.y)
+        if (!isHiddenChar1 && isHiddenChar2)
         {
-            rect.localPosition = Vector2.MoveTowards(rect.localPosition, coords,
-                Time.deltaTime * 1000f * speed);
-            yield return new WaitForSeconds(0.01f);
+            animator.SetTrigger("Hide1");
+            isHiddenChar1 = true;
+        }
+        else if (isHiddenChar1 && !isHiddenChar2){
+            animator.SetTrigger("Hide2");
+            isHiddenChar2 = true;
+        }
+        else if (!isHiddenChar1 && !isHiddenChar2)
+        {
+            animator.SetTrigger("Hide");
+            isHiddenChar1 = true;
+            isHiddenChar2 = true;
         }
     }
 }

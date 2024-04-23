@@ -21,5 +21,11 @@ MonoBehaviour:
       \u043E\u0436\u0438\u0434\u0430\u044E\u0442. \u041F\u0440\u043E\u0439\u0434\u0438\u0442\u0435
       \u0437\u0430 \u043C\u043D\u043E\u0439, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430."
     character: {fileID: 11400000, guid: 785a2b3d5fd85964783360c4c5ead61b, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: 785a2b3d5fd85964783360c4c5ead61b, type: 2}
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   background: {fileID: 21300000, guid: d6e2db11a27cc4c4b9a30c36104b5ff1, type: 3}
   nextScene: {fileID: 11400000, guid: 1cbb2c02c2bac324792bf73cb497bc02, type: 2}
+  IsLastScene: 0

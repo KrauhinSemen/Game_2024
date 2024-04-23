@@ -19,6 +19,4 @@ public class StoryScene : ChangerScene
 }
 
 public class ChangerScene: ScriptableObject
-{
-
-}
+{}

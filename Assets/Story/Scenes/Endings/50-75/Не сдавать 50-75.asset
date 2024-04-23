@@ -41,3 +41,4 @@ MonoBehaviour:
     character: {fileID: 11400000, guid: 5a690c49130f7b444897e555a180a1ab, type: 2}
   background: {fileID: 21300000, guid: eb539a84e8c637549820cab1abfcd641, type: 3}
   nextScene: {fileID: 0}
+  IsLastScene: 1

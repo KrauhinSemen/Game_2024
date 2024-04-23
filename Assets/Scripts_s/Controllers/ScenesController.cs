@@ -9,6 +9,7 @@ public class ScenesController : MonoBehaviour
     public BottomBarController bar;
     public BackgroundController backgroundController;
     public ChooseController chooseController;
+    public SpriteController sprites;
 
     private State state = State.IDLE;
 
@@ -68,6 +69,7 @@ public class ScenesController : MonoBehaviour
         state = State.ANIMATE;
         currScene = scene;
         bar.Hide();
+        sprites.HideAll();
         yield return new WaitForSeconds(1f);
         if (scene is StoryScene)
         {
@@ -76,6 +78,7 @@ public class ScenesController : MonoBehaviour
             yield return new WaitForSeconds(1f);
             bar.ClearBar();
             bar.Show();
+            sprites.ShowAll();
             yield return new WaitForSeconds(1f);
             bar.PlayScene(storyScene);
             state = State.IDLE;
