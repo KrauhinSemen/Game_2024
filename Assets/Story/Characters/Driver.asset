@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Driver
   m_EditorClassIdentifier: 
   charName: "\u0412\u043E\u0434\u0438\u0442\u0435\u043B\u044C"
+  sprite: {fileID: 21300000, guid: b22bb483c0125b14fa4ff175114d72b6, type: 3}

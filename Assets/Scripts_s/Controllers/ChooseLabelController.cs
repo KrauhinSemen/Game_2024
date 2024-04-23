@@ -21,6 +21,10 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
         return textMesh.rectTransform.sizeDelta.y * textMesh.rectTransform.localScale.y;
     }
 
+    public void ClearLabel() {
+        textMesh.text = "";
+    }
+
     public void Setup(ChooseScene.ChooseLabel label, ChooseController controller, float y)
     {
         scene = label.nextScene;

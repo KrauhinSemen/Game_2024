@@ -12,14 +12,17 @@ public class BottomBarController : MonoBehaviour
     private int sentenceIndex = -1;
     private StoryScene currScene;
     private Animator animator;
-    private bool isHidden = false; 
+    private bool isHidden = false;
 
     private enum State
     {
         COMPLETED, PLAYING
     }
 
-    private void Start() => animator = GetComponent<Animator>();
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public bool IsCompleted() => state == State.COMPLETED;
 
@@ -39,7 +42,11 @@ public class BottomBarController : MonoBehaviour
         isHidden = false;
     }
 
-    public void ClearBar() => textBar.text = "";
+    public void ClearBar()
+    {
+        textBar.text = "";
+        charNameText.text = "";
+    }
 
     public void PlayScene(StoryScene scene)
     {
