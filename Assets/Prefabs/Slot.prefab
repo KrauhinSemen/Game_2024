@@ -100,4 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultSprite: {fileID: -2135585597343286014, guid: 5aa8b770bc43046bc8d993d0d5b7f4a5,
     type: 3}
-  YellowKey: {fileID: 1513476851, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
+  ToiletKey: {fileID: 1513476851, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
+  Icon: {fileID: 507876043, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
+  PassWorker: {fileID: -546892405, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
+  Records: {fileID: -1629478879, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}

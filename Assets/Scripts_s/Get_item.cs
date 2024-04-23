@@ -8,6 +8,9 @@ public class NewBehaviourScript : MonoBehaviour
 {
     void Start()
     {
+        // Строчки для удаления конкретного предмета и очистки инвентаря
+        //PlayerPrefs.DeleteKey(gameObject.name);
+        //PlayerPrefs.DeleteKey("items_list");
         if (PlayerPrefs.GetInt(gameObject.name) == 1) Destroy(gameObject);
     }
 

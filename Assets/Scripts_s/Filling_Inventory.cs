@@ -6,7 +6,10 @@ using UnityEngine;
 public class Filling_Inventory : MonoBehaviour
 {
     public Sprite DefaultSprite;
-    public Sprite YellowKey;
+    public Sprite ToiletKey;
+    public Sprite Icon;
+    public Sprite PassWorker;
+    public Sprite Records;
     private SpriteRenderer SpriteRenderer;
     void Start()
     {
@@ -25,7 +28,10 @@ public class Filling_Inventory : MonoBehaviour
 
     private Sprite ChooseSprite(string name)
     {
-        if (name == "Keys_for_loot") return YellowKey;
+        if (name == "Ключ от туалета") return ToiletKey;
+        if (name == "Икона из Церкви") return Icon;
+        if (name == "Пропуск Работяги") return PassWorker;
+        if (name == "Записи") return Records;
         return DefaultSprite;
     }
 }
