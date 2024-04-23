@@ -8,6 +8,7 @@ public class StoryScene : ChangerScene
     public List<Sentence> sentences;
     public Sprite background;
     public ChangerScene nextScene;
+    public bool IsLastScene;
 
     [System.Serializable]
     public struct Sentence

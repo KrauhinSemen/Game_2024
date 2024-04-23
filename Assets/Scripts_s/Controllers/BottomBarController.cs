@@ -39,7 +39,11 @@ public class BottomBarController : MonoBehaviour
         isHidden = false;
     }
 
-    public void ClearBar() => textBar.text = "";
+    public void ClearBar()
+    {
+        textBar.text = "";
+        charNameText.text = "";
+    }
 
     public void PlayScene(StoryScene scene)
     {
