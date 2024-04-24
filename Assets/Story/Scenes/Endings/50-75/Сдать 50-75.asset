@@ -42,5 +42,5 @@ MonoBehaviour:
       \u041A. \u041D\u0435 \u0442\u0435\u0440\u044F\u0439\u0442\u0435\u0441\u044C!"
     character: {fileID: 11400000, guid: 5a690c49130f7b444897e555a180a1ab, type: 2}
   background: {fileID: 21300000, guid: eb539a84e8c637549820cab1abfcd641, type: 3}
-  nextScene: {fileID: 0}
-  IsLastScene: 1
+  nextScene: {fileID: 11400000, guid: 095dc02e6c4d9a740a4f540162b1a814, type: 2}
+  IsLastScene: 0
