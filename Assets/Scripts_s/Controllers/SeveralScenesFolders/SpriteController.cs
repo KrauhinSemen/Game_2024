@@ -6,7 +6,7 @@ public class SpriteController : MonoBehaviour
 {
     private BackgroundController switcher;
     private Animator animator;
-    private bool[] isHidden = new bool[5] { true, false, false, false, false};
+    private bool[] isHidden = new bool[7] { true, false, false, false, false, false, false };
 
     private void Awake()
     {

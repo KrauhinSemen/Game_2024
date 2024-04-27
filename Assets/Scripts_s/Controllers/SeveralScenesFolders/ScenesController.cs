@@ -28,8 +28,6 @@ public class ScenesController : MonoBehaviour
         }
     }
 
-    public void LoadNextScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
@@ -41,7 +39,7 @@ public class ScenesController : MonoBehaviour
                     StoryScene story = currScene as StoryScene;
                     if (story.IsLastScene)
                     {
-                        LoadNextScene();
+                        SceneManager.LoadScene("Main_menu");
                     }
                     else
                     {
