@@ -18,6 +18,7 @@ public class OneSceneController : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex-1);
         if (currScene is StoryScene)
         {
             StoryScene storyScene = currScene as StoryScene;
@@ -51,7 +52,17 @@ public class OneSceneController : MonoBehaviour
         }
     }
 
-    public void LoadNextScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+public void LoadNextScene()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            SceneManager.LoadScene("Map");
+        }
+        else
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("last_scene"));
+        }
+    }
 
     public void PlayScene(ChangerScene scene)
     {
