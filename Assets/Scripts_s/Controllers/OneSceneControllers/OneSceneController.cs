@@ -18,7 +18,6 @@ public class OneSceneController : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex-1);
         if (currScene is StoryScene)
         {
             StoryScene storyScene = currScene as StoryScene;

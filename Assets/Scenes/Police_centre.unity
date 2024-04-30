@@ -7770,6 +7770,7 @@ GameObject:
   - component: {fileID: 2015616169}
   - component: {fileID: 2015616168}
   - component: {fileID: 2015616170}
+  - component: {fileID: 2015616171}
   m_Layer: 0
   m_Name: "\u041F\u043E\u043B\u0438\u0446\u0435\u0439\u0441\u043A\u0438\u0439 \u0443\u0447\u0430\u0441\u0442\u043E\u043A"
   m_TagString: Untagged
@@ -7876,7 +7877,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -3.342624, y: -7.2867584}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7887,8 +7888,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.28125, y: 18.53125}
+  m_Size: {x: 4.4163413, y: 3.0471}
   m_EdgeRadius: 0
+--- !u!114 &2015616171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015616167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d95153c6c401574aa2ec6b461e34b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2051256535
 GameObject:
   m_ObjectHideFlags: 0

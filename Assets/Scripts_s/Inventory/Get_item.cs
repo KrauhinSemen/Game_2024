@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 using System.Text;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GetItem : MonoBehaviour
 {
     void Start()
     {
@@ -20,11 +20,22 @@ public class NewBehaviourScript : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(gameObject.name) != 1)
             {
-                var items = PlayerPrefs.GetString("items_list") + gameObject.name + "\n";
-                PlayerPrefs.SetString("items_list", items);
-                PlayerPrefs.SetInt(gameObject.name, 1);
+                if (gameObject.name == "Записи") {
+                    if (PlayerPrefs.GetInt("q_paper") == 1) {
+                        PlayerPrefs.SetInt("q_paper", 2);
+                        SetInfo();
+                    }
+                }
+                else SetInfo();
             }
-            Destroy(gameObject);
         }
+    }
+
+    private void SetInfo()
+    {
+        var items = PlayerPrefs.GetString("items_list") + gameObject.name + "\n";
+        PlayerPrefs.SetString("items_list", items);
+        PlayerPrefs.SetInt(gameObject.name, 1);
+        Destroy(gameObject);
     }
 }
