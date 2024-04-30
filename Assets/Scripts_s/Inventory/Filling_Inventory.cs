@@ -19,7 +19,7 @@ public class Filling_Inventory : MonoBehaviour
 
         for (var i=1; i < 9; i++)
         {
-            if (gameObject.name == "Slot " + i && items.Length >= i)
+            if (gameObject.name == "Slot " + i && items.Length > i)
             {
                 SpriteRenderer.sprite = ChooseSprite(items[i - 1]);
             }

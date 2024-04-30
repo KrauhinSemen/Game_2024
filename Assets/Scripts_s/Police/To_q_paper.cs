@@ -7,7 +7,24 @@ public class ToPaper : MonoBehaviour
 {
     private void Start()
     {
-        //PlayerPrefs.DeleteKey("q_paper");
+        // Для сброса квеста
+        /*
+        PlayerPrefs.DeleteKey("q_paper");
+        PlayerPrefs.DeleteKey("items_list"); // Для сброса квеста
+        PlayerPrefs.DeleteKey("Записи");
+        */
+
+        /*
+        PlayerPrefs.SetInt("q_paper", 1); // Пропуск диалога
+        
+        var items = PlayerPrefs.GetString("items_list").Split("\n");
+        var new_items = "";
+        for (var i = 0; i < items.Length; i++) if (items[i] != "Записи") new_items += items[i] + "\n";
+        PlayerPrefs.SetString("items_list", new_items);
+        PlayerPrefs.DeleteKey("Записи");
+        PlayerPrefs.DeleteKey("items_list");
+        */
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

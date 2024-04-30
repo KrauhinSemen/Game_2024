@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Varnava Quest.unity
     guid: 2a9e600f30e6f5046b496bdeafee96e4
+  - enabled: 1
+    path: Assets/Scenes/Kustova Quest.unity
+    guid: a76d79c4fb80ed64796031542ebf2249
   m_configObjects: {}
