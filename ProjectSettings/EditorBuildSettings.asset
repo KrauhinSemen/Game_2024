@@ -9,15 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_menu.unity
     guid: 53397bcbaeee63a498efe470f8bf0c13
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2dca3e12c29102248bfa6b298235aaf2
-  - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: 66adccc5917371c4c9533ec5d11b5504
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2dca3e12c29102248bfa6b298235aaf2
   - enabled: 1
     path: Assets/Scenes/Inventory.unity
     guid: a28ecf02420c21146a98d9c7d426154a
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Map.unity
     guid: b69b6281275cc4b44b13d7bb511f3dca
+=======
+    path: Assets/Scenes/Varnava Quest.unity
+    guid: 2a9e600f30e6f5046b496bdeafee96e4
+>>>>>>> 788bfa687bbf87752cfafd63c1e0b0ebd45238a5
   m_configObjects: {}

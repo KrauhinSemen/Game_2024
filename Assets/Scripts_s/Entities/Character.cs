@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewCharacter", menuName = "Data/New Character")]
@@ -5,4 +6,5 @@ using UnityEngine;
 public class Character : ScriptableObject
 {
     public string charName;
+    public Sprite sprite;
 }

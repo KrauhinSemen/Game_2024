@@ -13,6 +13,5 @@ public class ChooseScene : ChangerScene
     {
         public string text;
         public StoryScene nextScene;
-
     }
 }
