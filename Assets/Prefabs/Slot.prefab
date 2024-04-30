@@ -98,8 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8c061573b49a041b528f057157c4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultSprite: {fileID: -2135585597343286014, guid: 5aa8b770bc43046bc8d993d0d5b7f4a5,
-    type: 3}
+  DefaultSprite: {fileID: 513735899, guid: 0df6995541289c04b8f2ecbf2e3ad72c, type: 3}
   ToiletKey: {fileID: 1513476851, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
   Icon: {fileID: 507876043, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
   PassWorker: {fileID: -546892405, guid: 63f895ffdc55ce24f881f09c721277c5, type: 3}
