@@ -55,6 +55,11 @@ public class BottomBarController : MonoBehaviour
         PlaySentence();
     }
 
+    public void SpeedUp()
+    {
+    
+    }
+
     public void PlaySentence()
     {
         StartCoroutine(TypeText(currScene.sentences[++sentenceIndex].text));
@@ -70,7 +75,7 @@ public class BottomBarController : MonoBehaviour
         while (state != State.COMPLETED)
         {
             textBar.text += text[wordIndex];
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0f);
             if (++wordIndex == text.Length)
             {
                 state = State.COMPLETED;
