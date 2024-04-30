@@ -52,7 +52,7 @@ public class OneSceneController : MonoBehaviour
         }
     }
 
-public void LoadNextScene()
+    public void LoadNextScene()
     {
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
