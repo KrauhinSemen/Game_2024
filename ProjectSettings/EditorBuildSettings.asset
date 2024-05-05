@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kustova Quest.unity
     guid: a76d79c4fb80ed64796031542ebf2249
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: b69b6281275cc4b44b13d7bb511f3dca
   m_configObjects: {}

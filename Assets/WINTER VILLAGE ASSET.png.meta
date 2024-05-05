@@ -197,12 +197,12 @@ TextureImporter:
       name: WINTER VILLAGE ASSET_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 576
-        width: 32
+        width: 63
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,27 +210,6 @@ TextureImporter:
       bones: []
       spriteID: 97d599533ee002f4592fb28d8af28e7a
       internalID: -891549065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 576
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ec97c82b22652a44abf1e8fcc28298c
-      internalID: -1581279001
       vertices: []
       indices: 
       edges: []
@@ -614,33 +593,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_28
+      name: WINTER VILLAGE ASSET_29
       rect:
         serializedVersion: 2
         x: 128
         y: 544
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ea008fd9182f1341ab6e7b3bffd8647
-      internalID: -597066033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_29
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 544
-        width: 32
+        width: 64
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2025,9 +1983,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 416
-        width: 32
-        height: 32
+        y: 321
+        width: 192
+        height: 127
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2037,111 +1995,6 @@ TextureImporter:
       bones: []
       spriteID: ed587c8d388d0344eb5b4441ecb9570b
       internalID: 1249782653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_106
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dba96378fe9a1d4982177228f793c3d
-      internalID: 399623231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_107
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06c209a70781fd243820534b2eae38b4
-      internalID: -2044468523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_108
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b295c7fc971245459671ed97a79e018
-      internalID: -1420966721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_109
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 459b160220bf6b14889333016731ee05
-      internalID: -1494260424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_110
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 416
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1da487161cb3c3a4f92439b186adb458
-      internalID: 1719405567
       vertices: []
       indices: 
       edges: []
@@ -2399,132 +2252,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_123
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f729c544aa59d274da548b391b16ca80
-      internalID: 1635582265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_124
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4894f667db2980f4da926f14a3439eff
-      internalID: -1298373310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_125
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4b5dd85eb9b3594fb9c7b49f47fde37
-      internalID: -1458398581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_126
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f38770ddbc5ad5f438e892b49f410c00
-      internalID: 723922086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_127
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9038ace26fc1ac64b905d8c4032fa408
-      internalID: -929432772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_128
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 384
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95b5e796527e5d342acc7da949d58c83
-      internalID: 1788096398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: WINTER VILLAGE ASSET_129
       rect:
         serializedVersion: 2
@@ -2777,132 +2504,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_141
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0419d2c21345ad64aa274ead57e09740
-      internalID: 111294814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_142
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a42e8ef1dd905843ba5bf13e76ccbc5
-      internalID: 181399351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_143
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeffbc9d216db0e4d85489ae389eabbd
-      internalID: -1457726822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_144
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a8e1c4aa8667ae4296c12ca97b46864
-      internalID: 518065824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_145
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b637d9d267fc0784a917aba7817a988b
-      internalID: -946967093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_146
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fd5ca3a48b4b3448a880bb781525397
-      internalID: 1524520349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: WINTER VILLAGE ASSET_147
       rect:
         serializedVersion: 2
@@ -3150,132 +2751,6 @@ TextureImporter:
       bones: []
       spriteID: 5fde84fdea6ce0346a9f1d3f358e74fc
       internalID: 1704728482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_159
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4c2fe31c790e64468c07391adbeb144
-      internalID: -1397606290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_160
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dacc4560e670e84aba7646d78c0631a
-      internalID: -862633199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_161
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd4de2e8c39a0734691a3c6162eecdc8
-      internalID: 1393471309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_162
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ec59af2424d1154eb5da9b33094b76f
-      internalID: -448310544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_163
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75fe7eeb7d2145449a1c31529241f37d
-      internalID: -846402360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WINTER VILLAGE ASSET_164
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35688192345dbd34b834fc61e9030444
-      internalID: -1586793411
       vertices: []
       indices: 
       edges: []

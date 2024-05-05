@@ -26,7 +26,7 @@ public class IsTriggered : MonoBehaviour
     {
           if (Input.GetKey(KeyCode.E))
           {
-              SceneManager.LoadScene(4);
+              SceneManager.LoadScene(6);
           }
     }
     private void OnTriggerExit2D(Collider2D collision)
