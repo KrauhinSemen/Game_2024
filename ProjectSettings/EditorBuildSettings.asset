@@ -26,4 +26,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: b69b6281275cc4b44b13d7bb511f3dca
+  - enabled: 1
+    path: Assets/Scenes/Church.unity
+    guid: 9b6ae01c07f20e14c8f5ac1784039db2
+  - enabled: 1
+    path: Assets/Scenes/Police_centre.unity
+    guid: 3fea8087509e53748adcf2bde2cd04b0
+  - enabled: 1
+    path: Assets/Scenes/Residential_area.unity
+    guid: ee370bd374068fd4281f49802cf562b8
+  - enabled: 1
+    path: Assets/Scenes/Rus_house.unity
+    guid: 134712e7fe4ead24f9da89cfc091c5e2
+  - enabled: 1
+    path: Assets/Scenes/Factory.unity
+    guid: d706ebd67c223f2408bfb9461aad0981
   m_configObjects: {}

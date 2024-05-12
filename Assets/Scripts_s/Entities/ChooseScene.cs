@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewChooseScene", menuName = "Data/New Choose Scene")]
@@ -13,5 +14,6 @@ public class ChooseScene : ChangerScene
     {
         public string text;
         public StoryScene nextScene;
+        public int choose;
     }
 }
