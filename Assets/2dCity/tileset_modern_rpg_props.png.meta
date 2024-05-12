@@ -155,7 +155,6 @@ TextureImporter:
       name: tileset_modern_rpg_props_2
       rect:
         serializedVersion: 2
-        y: 180
         x: 144
         y: 241
         width: 18
