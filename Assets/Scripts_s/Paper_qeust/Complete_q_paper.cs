@@ -7,9 +7,9 @@ public class Complete_q_paper : MonoBehaviour
 {
     private void Start()
     {
-        // PlayerPrefs.SetInt("q_paper", 2);  // Для квеста с наличием предмета
-        // PlayerPrefs.DeleteAll();
-        // PlayerPrefs.SetInt("Madness", 50);
+       // PlayerPrefs.SetInt("q_paper", 2);  // Для квеста с наличием предмета
+       // PlayerPrefs.DeleteAll();
+       // PlayerPrefs.SetInt("Madness", 50);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

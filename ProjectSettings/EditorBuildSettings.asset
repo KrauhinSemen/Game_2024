@@ -30,13 +30,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Molchalina Quest.unity
     guid: f71075259d7251546ae2592dded78834
   - enabled: 1
-    path: Assets/Scenes/Worker Quest.unity
+    path: Assets/Scenes/Worker QuestStart.unity
     guid: 560f828dd92b2fb4891c949ede21f839
   - enabled: 1
-    path: Assets/Scenes/Father Vasiliy.unity
+    path: Assets/Scenes/Father Vasiliy Quest Start.unity
     guid: c350503e24916c646a24d21ee1a429ba
   - enabled: 1
-    path: Assets/Scenes/Student Quest.unity
+    path: Assets/Scenes/Student Quest Start.unity
     guid: 226e8b75d64dfa246a45567852bcbba0
   - enabled: 1
     path: Assets/Scenes/Church.unity
