@@ -31,7 +31,7 @@ public class Second_step_icon : MonoBehaviour
                 DeleteQuestIcon();
 
                 PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 10);
-                SceneManager.LoadScene(10); // «десь одна и та же сцена!
+                SceneManager.LoadScene(18);
             }
         }
     }

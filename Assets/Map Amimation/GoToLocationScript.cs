@@ -12,7 +12,31 @@ public class GoToLocationScript : MonoBehaviour
     // Update is called once per frame
     public void OnClick()
     {
-        SceneManager.LoadScene(SceneNumber);
+        if (SceneNumber == -1)
+        {
+            //goto restoran
+            int madness = PlayerPrefs.GetInt("Madness");
+            if (madness <= 49)
+            {
+                SceneManager.LoadScene(SceneNumber);
+            }
+            else if (madness == 50)
+            {
+                SceneManager.LoadScene(SceneNumber);
+            }
+            else if (madness >= 51 && madness <= 80)
+            {
+                SceneManager.LoadScene(SceneNumber);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneNumber);
+            }
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneNumber);
+        }
     }
     public void SetSceneNumber(int x) { 
         SceneNumber = x;

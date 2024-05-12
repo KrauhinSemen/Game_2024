@@ -31,7 +31,7 @@ public class Start_icon : MonoBehaviour
                 DeleteQuestIcon();
 
                 PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") + 10);
-                SceneManager.LoadScene(9); // «десь одна и та же сцена!
+                SceneManager.LoadScene(17);
             }
         }
     }
