@@ -29,7 +29,7 @@ public class Strat_q : MonoBehaviour
                 PlayerPrefs.SetFloat("last_y", player.transform.position.y);
                 DeleteQuestTicket();
                 PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 10);
-                SceneManager.LoadScene(8); // «десь одна и та же сцена!
+                SceneManager.LoadScene(16);
             }
         }
     }
