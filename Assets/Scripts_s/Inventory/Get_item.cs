@@ -20,13 +20,30 @@ public class GetItem : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(gameObject.name) != 1)
             {
-                if (gameObject.name == "Записи") {
-                    if (PlayerPrefs.GetInt("q_paper") == 1) {
+                if (gameObject.name == "Записи")
+                {
+                    if (PlayerPrefs.GetInt("q_paper") == 1)
+                    {
                         PlayerPrefs.SetInt("q_paper", 2);
                         SetInfo();
                     }
                 }
-                else SetInfo();
+                else if (gameObject.name == "Пропуск Работяги")
+                {
+                    if (PlayerPrefs.GetInt("q_ticket") == 1)
+                    {
+                        PlayerPrefs.SetInt("q_ticket", 2);
+                        SetInfo();
+                    }
+                }
+                else if (gameObject.name == "Икона из Церкви")
+                {
+                    if (PlayerPrefs.GetInt("q_icon") == 2)
+                    {
+                        PlayerPrefs.SetInt("q_icon", 3);
+                        SetInfo();
+                    }
+                }
             }
         }
     }
