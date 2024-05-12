@@ -8,6 +8,8 @@ public class Complete_q_paper : MonoBehaviour
     private void Start()
     {
         // PlayerPrefs.SetInt("q_paper", 2);  // Для квеста с наличием предмета
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("Madness", 50);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,7 +44,7 @@ public class Complete_q_paper : MonoBehaviour
     {
         var items = PlayerPrefs.GetString("items_list").Split("\n");
         var new_items = "";
-        for (var i = 0; i < items.Length; i++) if (items[i] != "Записи") new_items += items[i] + "\n";
+        for (var i = 0; i <= items.Length; i++) if (items[i] != "Записи") new_items += items[i] + "\n";
         PlayerPrefs.SetString("items_list", new_items);
         // PlayerPrefs.DeleteKey("Записи");
     }

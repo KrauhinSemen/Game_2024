@@ -12,6 +12,7 @@ public class Main_menu_script : MonoBehaviour
 
     public void Play(int scene_number)
     {
+        PlayerPrefs.SetInt("Madness", 50);
         SceneManager.LoadScene(scene_number);
     }
 

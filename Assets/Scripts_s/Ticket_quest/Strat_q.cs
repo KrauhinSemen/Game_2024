@@ -37,7 +37,7 @@ public class Strat_q : MonoBehaviour
     {
         var items = PlayerPrefs.GetString("items_list").Split("\n");
         var new_items = "";
-        for (var i = 0; i < items.Length; i++) if (items[i] != "Пропуск Работяги") new_items += items[i] + "\n";
+        for (var i = 0; i <= items.Length; i++) if (items[i] != "Пропуск Работяги") new_items += items[i] + "\n";
         PlayerPrefs.SetString("items_list", new_items);
         // PlayerPrefs.DeleteKey("Записи");
     }
