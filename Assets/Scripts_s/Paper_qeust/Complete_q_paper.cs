@@ -14,7 +14,7 @@ public class Complete_q_paper : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (PlayerPrefs.HasKey("q_paper") && PlayerPrefs.GetInt("q_paper") == 2)
+            if (PlayerPrefs.HasKey("q_paper") && PlayerPrefs.GetInt("q_paper") == 2) //С Кустовой
             {
                 PlayerPrefs.SetInt("q_paper", 3);
                 PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
