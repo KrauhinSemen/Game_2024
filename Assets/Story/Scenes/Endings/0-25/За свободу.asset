@@ -21,6 +21,10 @@ MonoBehaviour:
   - text: "\u0414\u0430 \u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0435\u0442
       \u0441\u0432\u043E\u0431\u043E\u0434\u0430."
     character: {fileID: 11400000, guid: ed717353135430c439a47a237d54544d, type: 2}
+  - text: "\u0414\u0430 \u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0435\u0442
+      \u0441\u0432\u043E\u0431\u043E\u0434\u0430. \u0421\u043A\u043E\u0440\u043E
+      \u044F \u0431\u0443\u0434\u0443 \u0434\u043E\u043C\u0430."
+    character: {fileID: 11400000, guid: f2cd963770839c34abb240c38d9487f7, type: 2}
   background: {fileID: 21300000, guid: 7f257a8738622c045ae5bb147470b107, type: 3}
   nextScene: {fileID: 0}
   IsLastScene: 1
