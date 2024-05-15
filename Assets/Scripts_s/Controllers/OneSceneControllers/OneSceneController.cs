@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,32 +22,41 @@ public class OneSceneController : MonoBehaviour
         if (currScene is StoryScene)
         {
             StoryScene storyScene = currScene as StoryScene;
-            bar.PlayScene(storyScene);
+            bar.PlayScene(storyScene, true);
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if (state == State.IDLE && bar.IsCompleted())
+            HandleClicks(true);
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            HandleClicks(false);
+        }
+    }
+
+    private void HandleClicks(bool isAnimated)
+    {
+        if (state == State.IDLE && bar.IsCompleted())
+        {
+            if (bar.IsLastSentence())
             {
-                if (bar.IsLastSentence())
+                StoryScene story = currScene as StoryScene;
+                if (story.IsLastScene)
                 {
-                    StoryScene story = currScene as StoryScene;
-                    if (story.IsLastScene)
-                    {
-                        LoadNextScene();
-                    }
-                    else
-                    {
-                        PlayScene(story.nextScene);
-                    }
+                    LoadNextScene();
                 }
                 else
                 {
-                    bar.PlaySentence();
+                    PlayScene(story.nextScene);
                 }
+            }
+            else
+            {
+                bar.PlaySentence(isAnimated);
             }
         }
     }
@@ -81,7 +91,7 @@ public class OneSceneController : MonoBehaviour
             bar.ClearBar();
             bar.Show();
             yield return new WaitForSeconds(1f);
-            bar.PlayScene(storyScene);
+            bar.PlayScene(storyScene, true);
             state = State.IDLE;
         }
         else if (scene is ChooseScene)
