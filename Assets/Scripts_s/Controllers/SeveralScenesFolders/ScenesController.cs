@@ -23,33 +23,42 @@ public class ScenesController : MonoBehaviour
         if (currScene is StoryScene)
         {
             StoryScene storyScene = currScene as StoryScene;
-            bar.PlayScene(storyScene);
+            bar.PlayScene(storyScene, true);
             backgroundController.SetImage(storyScene.background);
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if (state == State.IDLE && bar.IsCompleted())
+            HandleClicks(true);
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            HandleClicks(false);
+        }
+    }
+
+    private void HandleClicks(bool isAnimated)
+    {
+        if (state == State.IDLE && bar.IsCompleted())
+        {
+            if (bar.IsLastSentence())
             {
-                if (bar.IsLastSentence())
+                StoryScene story = currScene as StoryScene;
+                if (story.IsLastScene)
                 {
-                    StoryScene story = currScene as StoryScene;
-                    if (story.IsLastScene)
-                    {
-                        SceneManager.LoadScene("Main_menu");
-                    }
-                    else
-                    {
-                        PlayScene(story.nextScene);
-                    }
+                    SceneManager.LoadScene("Main_menu");
                 }
                 else
                 {
-                    bar.PlaySentence();
+                    PlayScene(story.nextScene);
                 }
+            }
+            else
+            {
+                bar.PlaySentence(isAnimated);
             }
         }
     }
@@ -74,7 +83,7 @@ public class ScenesController : MonoBehaviour
             bar.ClearBar();
             bar.Show();
             yield return new WaitForSeconds(1f);
-            bar.PlayScene(storyScene);
+            bar.PlayScene(storyScene, true);
             state = State.IDLE;
         }
         else if (scene is ChooseScene)
