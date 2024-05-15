@@ -29,7 +29,7 @@ public class Strat_q : MonoBehaviour
                 PlayerPrefs.SetFloat("last_y", player.transform.position.y);
                 DeleteQuestTicket();
                 PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 10);
-                SceneManager.LoadScene(16);
+                SceneManager.LoadScene(21);
             }
         }
     }
@@ -37,7 +37,7 @@ public class Strat_q : MonoBehaviour
     {
         var items = PlayerPrefs.GetString("items_list").Split("\n");
         var new_items = "";
-        for (var i = 0; i <= items.Length; i++) if (items[i] != "Пропуск Работяги") new_items += items[i] + "\n";
+        for (var i = 0; i < items.Length; i++) if (items[i] != "Пропуск Работяги" && items[i] != "") new_items += items[i] + "\n";
         PlayerPrefs.SetString("items_list", new_items);
         // PlayerPrefs.DeleteKey("Записи");
     }

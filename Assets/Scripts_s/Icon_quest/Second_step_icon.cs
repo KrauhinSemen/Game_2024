@@ -31,7 +31,7 @@ public class Second_step_icon : MonoBehaviour
                 DeleteQuestIcon();
 
                 PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 10);
-                SceneManager.LoadScene(18);
+                SceneManager.LoadScene(20);
             }
         }
     }
@@ -40,7 +40,7 @@ public class Second_step_icon : MonoBehaviour
     {
         var items = PlayerPrefs.GetString("items_list").Split("\n");
         var new_items = "";
-        for (var i = 0; i <= items.Length; i++) if (items[i] != "Икона из Церкви") new_items += items[i] + "\n";
+        for (var i = 0; i < items.Length; i++) if (items[i] != "Икона из Церкви" && items[i] != "") new_items += items[i] + "\n";
         PlayerPrefs.SetString("items_list", new_items);
         // PlayerPrefs.DeleteKey("Записи");
     }

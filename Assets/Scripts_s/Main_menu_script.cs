@@ -10,14 +10,31 @@ public class Main_menu_script : MonoBehaviour
         Screen.SetResolution(1600, 1200, true);
     }
 
-    public void Play(int scene_number)
+    public void New_game()
     {
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("Madness", 50);
-        SceneManager.LoadScene(scene_number);
+        PlayerPrefs.SetString("items_list", "");
+        SceneManager.LoadScene(1);
+    }
+
+    public void Continue()
+    {
+        if (PlayerPrefs.HasKey("last_scene")) SceneManager.LoadScene(PlayerPrefs.GetInt("last_scene"));
+    }
+
+    public void Game_info(Canvas canvas)
+    {
+        canvas.sortingOrder = 1;
     }
 
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void Back(Canvas canvas)
+    {
+        canvas.sortingOrder = -1;
     }
 }

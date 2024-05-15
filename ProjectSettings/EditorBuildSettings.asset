@@ -65,4 +65,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending(75-100).unity
     guid: 646d41238c3ccea408d97ca7064e5376
+  - enabled: 1
+    path: Assets/Scenes/Student Quest End.unity
+    guid: 4fde808ef49d2484cafe7088bed64d0d
+  - enabled: 1
+    path: Assets/Scenes/Worker QuestEnd.unity
+    guid: 9237651f016e93c4f8765fc4f2886b73
+  - enabled: 1
+    path: Assets/Scenes/Father Vasily Quest End.unity
+    guid: 4562f0aacb58d974baf1d8439cbf7f18
   m_configObjects: {}
