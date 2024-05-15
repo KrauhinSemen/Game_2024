@@ -48,22 +48,27 @@ public class BottomBarController : MonoBehaviour
         charNameText.text = "";
     }
 
-    public void PlayScene(StoryScene scene)
+    public void PlayScene(StoryScene scene, bool isAnimated)
     {
         currScene = scene;
         sentenceIndex = -1;
-        PlaySentence();
+        PlaySentence(isAnimated);
     }
 
-    public void SpeedUp()
+    public void PlaySentence(bool isAnimated)
     {
-    
-    }
-
-    public void PlaySentence()
-    {
-        StartCoroutine(TypeText(currScene.sentences[++sentenceIndex].text));
+        if (isAnimated)
+        {
+            StartCoroutine(TypeText(currScene.sentences[++sentenceIndex].text));
+        }
+        else DisplayFullText(currScene.sentences[++sentenceIndex].text);
         charNameText.text = currScene.sentences[sentenceIndex].character.charName;
+    }
+
+    private void DisplayFullText(string text)
+    {
+        textBar.text = text;
+        state = State.COMPLETED;
     }
 
     private IEnumerator TypeText(string text)
@@ -75,7 +80,7 @@ public class BottomBarController : MonoBehaviour
         while (state != State.COMPLETED)
         {
             textBar.text += text[wordIndex];
-            yield return new WaitForSeconds(0f);
+            yield return new WaitForSeconds(0.005f);
             if (++wordIndex == text.Length)
             {
                 state = State.COMPLETED;
