@@ -18,19 +18,19 @@ public class GoToLocationScript : MonoBehaviour
             int madness = PlayerPrefs.GetInt("Madness");
             if (madness <= 49)
             {
-                SceneManager.LoadScene(SceneNumber);
+                SceneManager.LoadScene(16);
             }
             else if (madness == 50)
             {
-                SceneManager.LoadScene(SceneNumber);
+                SceneManager.LoadScene(17);
             }
             else if (madness >= 51 && madness <= 80)
             {
-                SceneManager.LoadScene(SceneNumber);
+                SceneManager.LoadScene(18);
             }
             else
             {
-                SceneManager.LoadScene(SceneNumber);
+                SceneManager.LoadScene(19);
             }
         }
         else
