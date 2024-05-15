@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ToPaper : MonoBehaviour
 {
+    public Animator anim;
+    public GameObject frame;
     private void Start()
     {
         // Для сброса квеста
@@ -29,18 +31,36 @@ public class ToPaper : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Player") && !PlayerPrefs.HasKey("q_paper"))
+        {
+            anim.SetTrigger("OurTrigger");
+            frame.SetActive(true);
+        }
+    }
+    public virtual void OnTriggerStay2D(Collider2D collision)
+    {
         if (collision.tag == "Player")
         {
-            if (!PlayerPrefs.HasKey("q_paper"))
+            if (Input.GetKey(KeyCode.E))
             {
-                PlayerPrefs.SetInt("q_paper", 1);
-                PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
+                if (!PlayerPrefs.HasKey("q_paper"))
+                {
+                    PlayerPrefs.SetInt("q_paper", 1);
+                    PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
 
-                var player = collision.gameObject;
-                PlayerPrefs.SetFloat("last_x", player.transform.position.x);
-                PlayerPrefs.SetFloat("last_y", player.transform.position.y);
-                SceneManager.LoadScene(4);
+                    var player = collision.gameObject;
+                    PlayerPrefs.SetFloat("last_x", player.transform.position.x);
+                    PlayerPrefs.SetFloat("last_y", player.transform.position.y);
+                    SceneManager.LoadScene(4);
+                }
             }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && !PlayerPrefs.HasKey("q_paper"))
+        {
+            anim.SetTrigger("OurTrigger");
         }
     }
 }

@@ -2,40 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class Second_step_icon : MonoBehaviour
 {
+    public Animator anim;
+    public GameObject frame;
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && ((PlayerPrefs.HasKey("q_icon") && PlayerPrefs.GetInt("q_icon") == 1 )|| PlayerPrefs.GetInt("q_icon") == 3))
+        {
+            anim.SetTrigger("OurTrigger");
+            frame.SetActive(true);
+        }
+    }
+    public virtual void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            if (PlayerPrefs.HasKey("q_icon") && PlayerPrefs.GetInt("q_icon") == 1)
+            if (Input.GetKey(KeyCode.E))
             {
-                PlayerPrefs.SetInt("q_icon", 2);
-                PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
+                if (PlayerPrefs.HasKey("q_icon") && PlayerPrefs.GetInt("q_icon") == 1)
+                {
+                    PlayerPrefs.SetInt("q_icon", 2);
+                    PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
 
-                var player = collision.gameObject;
-                PlayerPrefs.SetFloat("last_x", player.transform.position.x);
-                PlayerPrefs.SetFloat("last_y", player.transform.position.y);
-                SceneManager.LoadScene(10);
-            }
-            else if (PlayerPrefs.GetInt("q_icon") == 3)
-            {
-                PlayerPrefs.SetInt("q_icon", 4);
-                PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
+                    var player = collision.gameObject;
+                    PlayerPrefs.SetFloat("last_x", player.transform.position.x);
+                    PlayerPrefs.SetFloat("last_y", player.transform.position.y);
+                    SceneManager.LoadScene(10);
+                }
+                else if (PlayerPrefs.GetInt("q_icon") == 3)
+                {
+                    PlayerPrefs.SetInt("q_icon", 4);
+                    PlayerPrefs.SetInt("last_scene", SceneManager.GetActiveScene().buildIndex);
 
-                var player = collision.gameObject;
-                PlayerPrefs.SetFloat("last_x", player.transform.position.x);
-                PlayerPrefs.SetFloat("last_y", player.transform.position.y);
+                    var player = collision.gameObject;
+                    PlayerPrefs.SetFloat("last_x", player.transform.position.x);
+                    PlayerPrefs.SetFloat("last_y", player.transform.position.y);
 
-                DeleteQuestIcon();
+                    DeleteQuestIcon();
 
-                PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 10);
-                SceneManager.LoadScene(20);
+                    PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 10);
+                    SceneManager.LoadScene(20);
+                }
             }
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && ((PlayerPrefs.HasKey("q_icon") && PlayerPrefs.GetInt("q_icon") == 1) || PlayerPrefs.GetInt("q_icon") == 3))
+        {
+            anim.SetTrigger("OurTrigger");
+        }
+    }
     private void DeleteQuestIcon()
     {
         var items = PlayerPrefs.GetString("items_list").Split("\n");

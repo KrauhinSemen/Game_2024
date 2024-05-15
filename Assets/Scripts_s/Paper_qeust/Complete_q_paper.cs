@@ -5,17 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class Complete_q_paper : MonoBehaviour
 {
+    public Animator anim;
+    public GameObject frame;
     private void Start()
     {
         // PlayerPrefs.SetInt("q_paper", 2);  // Для квеста с наличием предмета
         //PlayerPrefs.DeleteAll();
-      //  PlayerPrefs.SetInt("Madness", 50);
+        //  PlayerPrefs.SetInt("Madness", 50);
         //PlayerPrefs.SetString("items_list", "");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player"&&PlayerPrefs.HasKey("q_paper") && PlayerPrefs.GetInt("q_paper") == 2)
+        {
+            anim.SetTrigger("OurTrigger");
+            frame.SetActive(true);
+        }
+    }
+    public virtual void OnTriggerStay2D(Collider2D collision)
+    {
+        if (Input.GetKey(KeyCode.E))
         {
             if (PlayerPrefs.HasKey("q_paper") && PlayerPrefs.GetInt("q_paper") == 2) //С Кустовой
             {
@@ -33,9 +43,10 @@ public class Complete_q_paper : MonoBehaviour
                     PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") + 30);
                     SceneManager.LoadScene(5);
                 }
-                else {
+                else
+                {
                     PlayerPrefs.SetInt("Madness", PlayerPrefs.GetInt("Madness") - 30);
-                    SceneManager.LoadScene(7); 
+                    SceneManager.LoadScene(7);
                 }
             }
         }
@@ -49,4 +60,12 @@ public class Complete_q_paper : MonoBehaviour
         PlayerPrefs.SetString("items_list", new_items);
         // PlayerPrefs.DeleteKey("Записи");
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && PlayerPrefs.HasKey("q_paper") && PlayerPrefs.GetInt("q_paper") == 2)
+        {
+            anim.SetTrigger("OurTrigger");
+        }
+    }
 }
+
